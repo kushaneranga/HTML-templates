@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main_page {
+    background-color: white;
+}
+
+/* header */
+
+.heder_area, .contents_area, .gallery, .featured_area {
+    padding: 30px 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.heder_content, .gallery_area, .featured_area2, .items_area2 {
+    width: 90vw;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.heder, .contents, .gallery_img, .featured_area3, .items_area3 {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.search {
+    float: left;
+    width: 33.3333333333333%;
+    margin: auto;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top: 10px;
+}
+
+form.search_bar input[type=text] {
+    border-bottom: 1px solid #e5e5e5;
+    border-left: medium none;
+    border-right: medium none;
+    border-top: medium none;
+    background:none;
+    width: 220px;
+    line-height:30px;
+}
+
+::placeholder {
+    color: #888;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+form.search_bar button {
+    border: none;
+    background: none;
+    position: absolute;
+    color: #888;
+    font-size: 14px;
+    display: inline-block;
+    line-height:30px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.logo {
+    text-align: center;
+    width: 33.3333333333333%;
+    margin: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.logo img {
+    width:50px;
+    height: 50px;
+    border: 0;
+}
+
+.account_ship {
+    float: right;
+    width: 33.3333333333333%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+}
+
+.account_ship_area {
+    float: right;
+}
+
+.account_ship_con {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0;
+    padding-top: 10px;
+}
+
+.account , .ship {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+li a:link, a:visited {
+    color: #222;
+    text-decoration: none;
+}
+
+li a:hover, a:active {
+    color: red;
+    background-color: transparent;
+}
+
+li a i {
+    padding-right: 5px;
+}
+
+.circle {
+    margin: 0px 0px 0px 5px;
+    height: 20px;
+    width: 20px;
+    background-color: #222;
+    border-radius: 50px;
+    display: inline-block;
+    color:white;
+}
+
+/* header end */
+
+/* contents */
+.all_menu {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menus {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+li.menus a {
+    padding: 0px 20px;
+}
+/* contents end */
+/* main poster */
+
+.poster {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.poster img {
+    width: 100vw;
+    height: 65vh;
+    max-width: 100%;
+}
+
+.poster_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    line-height: 1.5;
+}
+
+.poster_text .poster_text_subheading h2 {
+    color: #666;
+    font-weight: normal;
+    letter-spacing: 3px;
+    font-size: 15px;
+    display: block;
+}
+
+.poster_text .poster_text_mainheading h1 {
+    color:#222;
+    font-weight: normal;
+    font-size: 50px;
+    letter-spacing: 3px;
+    display: block;
+}
+
+.poster_text_linkbox {
+    display: block;
+    margin: 20px 0px 0px 0px;
+}
+
+.linkbox {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.links {
+    display: inline-block;
+}
+
+/* linkbox style */
+.only_linkbox:link, .only_linkbox:visited {
+    border: 1px solid black;
+    padding: 10px 20px;
+    margin-right: 20px;
+    background-color: transparent;
+    font-weight: 550;
+}
+
+.only_linkbox:hover, .only_linkbox:active {
+    background-color: red;
+    color: white;
+    border: none;
+}
+/* linkbox style end */
+
+/* main poster end */
+
+/* image gallery */
+
+.gallery_row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.fistrow_img {
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+    position: relative;
+    text-align: center;
+}
+
+.fistrow_img img, .secondrow_img img{
+    width: 100%;
+}
+
+.secondrow_img {
+    float: left;
+    width: 33.3333333333333%;
+    padding: 0 15px;
+    position: relative;
+    text-align: center;
+}
+
+.gallery_link span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: larger;
+    font-weight: inherit;
+    letter-spacing: 3px;
+}
+
+.gallery_link span:hover, .gallery_link span:active {
+    background-color: transparent;
+    color: rgb(228, 228, 228);
+    border: none;
+    font-weight: inherit;
+    font-size: x-large;
+}
+
+/* image gallery end */
+
+/* featured */
+.featured {
+    text-align:center;
+}
+
+.featured h1 {
+    color: black;
+    font-weight: bold;
+}
+
+.featured span img {
+    width: 150px;
+    height: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+/* featured end */
+
+/* items */
+
+.items_area {
+    padding: 30px 0 0 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+.items {
+    float: left;
+    width: 25%;
+    padding: 0 15px 30px 15px;
+}
+
+.item_img {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.item_img::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.item_img img {
+    width: 100%;
+}
+
+.sale_tag {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+}
+
+.sale_tag img {
+    width:35px;
+}
+
+.item_detail {
+    text-align: center;
+}
+
+.item_detail h1{
+    font-weight: bold;
+    font-size: large;
+    margin-top: 20px;
+    color: #555;
+    display: block;
+}
+
+.item_detail h2 {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin-top:5px;
+    color: #777;
+    display: inline-block;
+}
+
+.item_detail h3 {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin-top:5px;
+    margin-left: 10px;
+    color: red;
+    display: inline-block;
+}
+
+/* items end */
