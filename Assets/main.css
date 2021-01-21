@@ -256,6 +256,12 @@ li a i {
     margin: 0;
 }
 
+@media (max-width:480px) {
+    .all_menu {
+        font-size: 15px;
+    }
+}
+
 .menus {
     display: inline-block;
     padding: 0;
