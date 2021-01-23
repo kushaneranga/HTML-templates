@@ -373,6 +373,12 @@ div.poster img {
     max-width: 100%;
 }
 
+@media (max-width:840px) {
+    div.poster img {
+        height:auto;
+    }
+}
+
 .poster_text {
     position: absolute;
     top: 50%;
@@ -390,6 +396,13 @@ div.poster img {
     display: block;
 }
 
+@media (max-width: 840px) {
+    .poster_text .poster_text_subheading h2 {
+        letter-spacing: 2px;
+        font-size: 12px;
+    }
+}
+
 .poster_text .poster_text_mainheading h1 {
     color:#222;
     font-weight: normal;
@@ -398,9 +411,21 @@ div.poster img {
     display: block;
 }
 
+@media (max-width: 840px) {
+    .poster_text .poster_text_mainheading h1 {
+        font-size: 35px;
+    }
+}
+
 .poster_text_linkbox {
     display: block;
     margin: 20px 0px 0px 0px;
+}
+
+@media (max-width:840px) {
+    .poster_text_linkbox {
+        margin: 10px 0px 0px 0px;
+    }
 }
 
 .linkbox {
@@ -410,6 +435,12 @@ div.poster img {
     text-align: center;
     padding: 0;
     margin: 0;
+}
+
+@media (max-width:840px) {
+    .linkbox {
+        font-size: 12px;
+    }
 }
 
 .links {
@@ -425,6 +456,13 @@ div.poster img {
     font-weight: 550;
 }
 
+@media (max-width:840px) {
+    .only_linkbox:link, .only_linkbox:visited {
+        padding: 9px 17px;
+        margin-right: 15px;
+    }
+}
+
 .only_linkbox:hover, .only_linkbox:active {
     background-color: red;
     color: white;
@@ -435,6 +473,16 @@ div.poster img {
 /* main poster end */
 
 /* image gallery */
+
+#row_sp {
+    margin-top: 30px
+}
+
+@media (max-width:840px) {
+    #row_sp {
+        margin-top: 5px;
+    }
+}
 
 .gallery_row::after {
     content: "";
@@ -450,6 +498,12 @@ div.poster img {
     text-align: center;
 }
 
+@media (max-width:840px) {
+    .fistrow_img {
+        padding: 0 5px;
+    }
+}
+
 .fistrow_img img, .secondrow_img img{
     width: 100%;
 }
@@ -460,6 +514,13 @@ div.poster img {
     padding: 0 15px;
     position: relative;
     text-align: center;
+    overflow: hidden;
+}
+
+@media (max-width:840px) {
+    .secondrow_img {
+        padding: 0 5px;
+    }
 }
 
 .gallery_link span {
@@ -473,12 +534,24 @@ div.poster img {
     letter-spacing: 3px;
 }
 
+@media (max-width:840px) {
+    .gallery_link span {
+        font-size: 12px;
+    }
+}
+
 .gallery_link span:hover, .gallery_link span:active {
     background-color: transparent;
     color: rgb(228, 228, 228);
     border: none;
     font-weight: inherit;
     font-size: x-large;
+}
+
+@media (max-width:840px) {
+    .gallery_link span:hover, .gallery_link span:active {
+        font-size: 14px;
+    }
 }
 
 /* image gallery end */
