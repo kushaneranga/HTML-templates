@@ -3,8 +3,16 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: white;
+    --secondary-color: #222;
+    --searchbar-color: #888;
+    --itemdetail-color-one :#555;
+    --itemdetail-color-two :#777;
+}
+
 .main_page {
-    background-color: white;
+    background-color: var(--primary-color);
 }
 
 /* header */
@@ -124,7 +132,7 @@ form.search_bar input[type=text] {
 }
 
 ::placeholder {
-    color: #888;
+    color: var(--searchbar-color); /* light and dark mode */
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
@@ -147,7 +155,7 @@ form.search_bar button {
     border: none;
     background: none;
     position: absolute;
-    color: #888;
+    color: var(--searchbar-color); /* light and dark mode */
     font-size: 14px;
     display: inline-block;
     line-height:30px;
@@ -294,7 +302,7 @@ form.search_bar button {
 }
 
 li a:link, a:visited {
-    color: #222;
+    color: var(--secondary-color); /* light and dark mode */
     text-decoration: none;
 }
 
@@ -311,10 +319,10 @@ li a i {
     margin: 0px 0px 0px 5px;
     height: 20px;
     width: 20px;
-    background-color: #222;
+    background-color: var(--secondary-color); /* light and dark mode */
     border-radius: 50px;
     display: inline-block;
-    color:white;
+    color:var(--primary-color); /* light and dark mode */
 }
 
 @media (max-width:840px) {
@@ -677,7 +685,7 @@ div.poster img {
 }
 
 .featured h1 {
-    color: black;
+    color: var(--secondary-color); /* light and dark mode */
     font-weight: bold;
 }
 
@@ -821,7 +829,7 @@ div.poster img {
     font-weight: bold;
     font-size: large;
     margin-top: 20px;
-    color: #555;
+    color: var(--itemdetail-color-one); /* light and dark mode */
     display: block;
 }
 
@@ -844,7 +852,7 @@ div.poster img {
     font-size: 16px;
     text-align: center;
     margin-top:5px;
-    color: #777;
+    color: var(--itemdetail-color-two); /* light and dark mode */
     display: inline-block;
 }
 
