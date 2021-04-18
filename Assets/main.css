@@ -3,6 +3,7 @@
     box-sizing: border-box;
 }
 
+/* light and dark mode */
 :root {
     --primary-color: white;
     --secondary-color: #222;
@@ -10,6 +11,14 @@
     --itemdetail-color-one :#555;
     --itemdetail-color-two :#777;
 }
+.dark-mode{
+    --primary-color: rgb(17, 17, 17);
+    --secondary-color: #e5e5e5;
+    --searchbar-color: #e5e5e5;
+    --itemdetail-color-one :rgb(184, 184, 184);
+    --itemdetail-color-two :rgb(206, 206, 206);
+}
+/* end light and dark mode */
 
 .main_page {
     background-color: var(--primary-color);
@@ -272,7 +281,7 @@ form.search_bar button {
     }
 }
 
-.account , .ship {
+.account, .ship, .dark-light {
     display: inline-block;
     margin: 0 10px;
 }
