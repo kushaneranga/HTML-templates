@@ -310,6 +310,10 @@ form.search_bar button {
     }
 }
 
+.dark_icon :is(img) {
+    width: 20px;
+}
+
 li a:link, a:visited {
     color: var(--secondary-color); /* light and dark mode */
     text-decoration: none;
