@@ -287,19 +287,19 @@ form.search_bar button {
 }
 
 @media (max-width: 840px) {
-    .account , .ship {
+    .account , .ship, .dark-light {
         margin: 0 5px;
     }
 }
 
 @media (max-width: 480px) {
-    .account , .ship {
+    .account , .ship, .dark-light {
         margin: 0 1px;
     }
 }
 
 @media (max-width: 305px) {
-    .account , .ship {
+    .account , .ship, .dark-light {
         margin: 0 2px;
     }
 }
